@@ -1,0 +1,26 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Headers from '../components/Headers';
+import Portada from '../components/Portada';
+import Somos from '../components/Somos';
+import Clientes from '../components/Clientes';
+import Calidad from '../components/Calidad';
+import Services from '../components/Services';
+import Ceo from '../components/Ceo';
+import Footer from '../components/Footer';
+---
+
+<Layout title="Welcome to Astro.">
+<Headers client:only="react"/>
+<Portada client:only="react"/>
+<Calidad client:only="react"/>
+<Somos client:only="react"/>
+<Clientes client:only="react"/>
+<Services client:only="react"/>
+<Ceo client:only="react"/>
+<Footer client:only="react"/>
+</Layout>
+
+<style>
+
+</style>
